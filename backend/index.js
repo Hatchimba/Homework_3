@@ -16,8 +16,8 @@ function getMenu(req, res){
     // Step 0: Setup the connection
     var connection = mysql.createConnection({
         host     : 'localhost',
-        user     : 'hatchimba',
-        password : 'hashi_20',
+        user     : 'utec',
+        password : '1234567890',
         database : 'restaurant'
       });
   
