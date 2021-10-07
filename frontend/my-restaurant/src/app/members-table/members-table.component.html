@@ -1,0 +1,15 @@
+<table>
+    <tr>
+        <th>Name_of_the_dish</th>
+        <th>Price</th>
+        <th>Created_date</th>
+        <th>Modified_date</th>
+        
+    </tr>
+    <tr *ngFor ="let item of members">
+        <td>{{item.name_of_the_dish}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.created_date}}</td>
+        <td>{{item.modified_date}}</td>
+    </tr>
+</table>
