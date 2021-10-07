@@ -1,10 +1,10 @@
-const express = require('express');
+var express = require('express');
 var app = express();
+
+var mysql = require('mysql');
 var cors = require('cors');
 
 app.use(cors());
-
-const mysql = require('mysql');
 
 
 
@@ -34,6 +34,7 @@ function getMenu(req, res){
     connection.query(myQuery, function (error, results, fields) {
       
       // Step 3: Process the result inside the callback
+      
       res.send(results);
   
       // Step 4: Close the connection
